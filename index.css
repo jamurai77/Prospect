@@ -34,6 +34,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 nav {
@@ -41,7 +42,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid white;
     position: sticky;
     top: 0;
 }
@@ -70,13 +70,17 @@ a:hover {
     opacity: 0.6;
 }
 
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 1rem;
     padding: 1rem 0.5rem;
 }
 
@@ -84,10 +88,31 @@ a:hover {
     font-weight: 700;
 }
 
+.links {
+    background: black;
+    list-style: none;
+    border: 1px solid white;
+    border-top: none;
+    padding: .5rem;
+    display: none;
+    position: absolute;
+    width: fit-content;
+    z-index: 1000;
+}
+
+.nav-item:hover .links {
+    display: block;
+}
+
+.dropdown-link {
+    font-size: .75rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: 1.5px solid white;
 }
 
 h3 {
