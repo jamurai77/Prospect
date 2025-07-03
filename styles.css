@@ -93,7 +93,7 @@ ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: min(900px, 100%);
     padding: 1rem 0.5rem;
 }
 
