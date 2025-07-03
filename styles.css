@@ -144,6 +144,7 @@ ul li {
 .product label {
     margin: 1rem 0;
     cursor: pointer;
+    display: none;
 }
 
 .product label:hover,
@@ -160,6 +161,7 @@ ul li {
 .product-blurb {
     font-weight: 300;
     width: 100%;
+    display: none;
 }
 
 .product-details {
@@ -167,6 +169,7 @@ ul li {
     flex-direction: row;
     justify-content: space-around;
     width: 350px;
+    margin-top: 0.5rem;
 }
 
 .popup-container {
@@ -231,13 +234,25 @@ footer {
 
 /* ORDER PAGE Styles */
 .order-main p {
-    margin: 1rem 0.5rem;
+    margin: 1rem;
     text-align: center;
 }
 
 #square {
     display: inline;
     width: 1.5rem;
+}
+
+/* ABOUT PAGE Styles */
+.about-main p {
+    margin: 1rem;
+    text-align: center;
+    width: min(540px, 90%);
+}
+
+.about-main span {
+    margin: 0 1rem;
+    font-weight: 800;
 }
 
 /* EAT PAGE Styles */
